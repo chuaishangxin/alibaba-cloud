@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: alibaba-nacos-config-client
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        # 文件名称 默认值 ${spring.application.name}
+        prefix: alibaba-nacos-config
+        # 文件后缀 默认值 properties
+        file-extension: yaml
+        # 分组 默认值 DEFAULT_GROUP
+        group: DEV_GROUP
+        # 命名空间 默认值 Public
+        namespace: 330cf578-613e-4972-8d5d-ea95aac98689
+        # 多配置文件、共享文件 
+#        ext-config[0]:
+#            data-id: actuator.properties
+#            group: DEFAULT_GROUP
+#            refresh: true
+#        ext-config[1]:
+#            data-id: log.properties
+#            group: DEFAULT_GROUP
+#            refresh: true
+#
+#        # 多配置文件、共享文件
+#        shared-dataids: actuator.properties,log.properties
+#        refreshable-dataids: actuator.properties,log.properties

@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: alibaba-sentinel-rate-limiting
+
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+
+      datasource:
+        ds:
+          nacos:
+            server-addr: localhost:8848
+            dataId: ${spring.application.name}-sentinel
+            groupId: DEFAULT_GROUP
+            rule-type: flow

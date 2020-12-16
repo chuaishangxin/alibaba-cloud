@@ -1,0 +1,8 @@
+# Project exclude paths
+/alibaba-dubbo-api/target/
+/alibaba-dubbo-client/target/
+/alibaba-dubbo-server/target/
+/alibaba-nacos-config-client/target/
+/alibaba-nacos-discovery-client/target/
+/alibaba-nacos-discovery-server/target/
+/alibaba-sentinel-rate-limiting/target/
